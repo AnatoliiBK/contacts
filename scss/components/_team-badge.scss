@@ -1,0 +1,88 @@
+.badge {
+
+    width: 100%;
+    background: var(--brand-color-hero);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-bottom: 30px;
+    padding-bottom: 24px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+      }
+    
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: 270px;
+        margin-bottom: 0;
+    }
+
+    
+    
+    &__image {
+        display: block;
+
+        
+        width: 100%;
+        
+        @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+    }
+    
+    &__data {
+        padding-top: 30px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    
+    &__title {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;    
+        letter-spacing: 0.03em;
+        color: var(--brand-color-text);
+    }
+    
+    &__desc {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.19;    
+        letter-spacing: 0.03em;
+        color: var(--brand-color-description);
+    }
+    
+    &__list {
+        width: 206px;
+        height: 44px;
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        margin-right: auto;
+        margin-left: auto;
+        
+        
+    }
+}
+

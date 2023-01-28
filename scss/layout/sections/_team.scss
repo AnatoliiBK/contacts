@@ -1,0 +1,48 @@
+/* НАША КОМАНДА */
+
+.team {
+    background: var(--brand-color-com);
+    
+            
+    
+    &__title {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 30px;     
+        font-size: 28px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        color: var(--brand-color-text);
+
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            line-height: 1.17;
+            margin-bottom: 50px;
+        }
+    }
+    
+    &__list {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;   
+        list-style: none;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 30px;
+            column-gap: 30px;
+        }
+
+        @media screen and (min-width: 1200px) {
+    
+            
+            display: flex;
+            justify-content: space-between;
+        }
+        
+    }
+}
+
+/* НАША КОМАНДА  end*/
