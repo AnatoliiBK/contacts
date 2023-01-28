@@ -669,6 +669,23 @@ body {
   fill: var(--brand-color-link);
 }
 
+.contacts {
+  padding-top: 56px;
+  padding-bottom: 73px;
+}
+
+.contacts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* З СЕКЦІЇ ОСОБЛИВОСТЕЙ або FEATURES  */
 .hidden-title {
   margin-right: auto;
