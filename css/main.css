@@ -2,6 +2,8 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--brand-color-text);
+  /*   font-family: 'Montserat', sans-serif;
+     color: var(--brand-color-text);  */
 }
 
 *,
@@ -25,12 +27,17 @@ body {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 @media screen and (min-width: 320px) {
   .container {
     width: 320px;
+  }
+}
+@media screen and (min-width: 414px) {
+  .container {
+    width: 414px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -41,6 +48,11 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+  }
+}
+@media screen and (min-width: 930px) {
+  .container {
+    width: 930px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -674,7 +686,7 @@ body {
   padding-top: 36px;
   padding-bottom: 32px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .contact__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -713,13 +725,35 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+.contact__item:first-child {
+  -webkit-column-gap: 23px;
+     -moz-column-gap: 23px;
+          column-gap: 23px;
+}
+.contact__item:nth-child(2) {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.contact__item:last-child {
+  margin-bottom: 0;
+}
+.contact__item:last-child > p {
+  display: none;
+}
 .contact__label {
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #C79002;
 }
 .contact__list-phone-f {
   list-style: none;
@@ -748,9 +782,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-column-gap: 8px;
      -moz-column-gap: 8px;
           column-gap: 8px;
@@ -767,9 +798,6 @@ body {
 }
 .contact__box-s {
   width: 144px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-column-gap: 8px;
      -moz-column-gap: 8px;
           column-gap: 8px;
@@ -782,6 +810,67 @@ body {
   color: #494848;
   text-decoration: none;
 }
+.contact__address {
+  width: 260px;
+  height: 76px;
+  margin-left: auto;
+  margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  background: #FFFFFF;
+  border: 0.5px solid #F3C653;
+  border-radius: 2px;
+}
+.contact__address-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #494848;
+}
+.contact__img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.contact__image {
+  width: 384px;
+}
+@media screen and (min-width: 414px) {
+  .contact__image {
+    width: 414px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .contact__image {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 535px) {
+  .contact__image {
+    width: 535px;
+  }
+}
+@media screen and (min-width: 634px) {
+  .contact__image {
+    width: 634px;
+  }
+}
+
 /* З СЕКЦІЇ ОСОБЛИВОСТЕЙ або FEATURES  */
 .hidden-title {
   margin-right: auto;

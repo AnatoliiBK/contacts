@@ -4,10 +4,11 @@
     padding-bottom: 32px;
 
     &__container {
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 480px) {
             display: flex;
             justify-content: space-between;
             align-items: center;
+
         }
     }
 
@@ -41,12 +42,35 @@
 
     &__item {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+        &:first-child {
+            column-gap: 23px;
+        }
+        &:nth-child(2) {
+            justify-content: space-between;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:last-child > p {
+            display: none;
+
+        }
+
     }
+
+    
 
     &__label {
         margin-top: 0;
         margin-bottom: 0;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #C79002;
     }
 
     &__list-phone-f {
@@ -72,7 +96,7 @@
 
     &__box {
         display: flex;
-        justify-content: space-between;
+        
         column-gap: 8px;
         align-items: center;
         width: 260px;
@@ -86,7 +110,7 @@
 
     &__box-s {
         width: 144px;
-        justify-content: flex-start;
+        
         column-gap: 8px;
     }
 
@@ -102,6 +126,54 @@
     &__icon-c {
         
         
+    }
+
+    &__address {
+        width: 260px;
+        height: 76px;
+        margin-left: auto;
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        background: #FFFFFF;
+        border: 0.5px solid #F3C653;
+        border-radius: 2px;
+    }
+
+    &__address-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        color: #494848;
+    }
+
+    &__img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__image {
+        width: 384px;
+        @media screen and (min-width: 414px) {
+            width: 414px;
+        }
+        @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+        @media screen and (min-width: 535px) {
+            width: 535px;
+        }
+        @media screen and (min-width: 634px) {
+            width: 634px;
+        }
+
+
     }
 }
 
