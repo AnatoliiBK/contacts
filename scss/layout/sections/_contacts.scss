@@ -1,10 +1,107 @@
-.contacts {
-    padding-top: 56px;
-    padding-bottom: 73px;
+.contact {
+    display: block;
+    padding-top: 36px;
+    padding-bottom: 32px;
+
+    &__container {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        
+        margin-top: 0;
+        margin-bottom: 12px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.075;
+        letter-spacing: 0.3em;
+        color: #494848;
+
+    }
+
+    &__text {
+        margin-top: 0;
+        margin-bottom: 16px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: #7A7A7A;
+
+    }
+
+    &__list {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__label {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__list-phone-f {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        column-gap: 12px;
+        
+    }
+
+    &__list-phone-f > li:last-child {
+        display: none;
+        
+    }
+
+    &__list-phone {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        column-gap: 12px;
+        
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 8px;
+        align-items: center;
+        width: 260px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 0.5px solid #F3C653;
+        border-radius: 2px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    &__box-s {
+        width: 144px;
+        justify-content: flex-start;
+        column-gap: 8px;
+    }
+
+    &__phone {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.214;
+        letter-spacing: 0.02em;
+        color: #494848;
+        text-decoration: none;
+    }
+
+    &__icon-c {
+        
+        
+    }
 }
 
-.contacts__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
