@@ -4,11 +4,11 @@
     padding-bottom: 32px;
 
     &__container {
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 768px) {
             display: flex;
             justify-content: space-between;
             align-items: center;
-
+            
         }
     }
 
@@ -161,15 +161,13 @@
     &__image {
         width: 384px;
         @media screen and (min-width: 414px) {
-            width: 414px;
+            width: 384px;
         }
-        @media screen and (min-width: 480px) {
-            width: 480px;
-        }
-        @media screen and (min-width: 535px) {
+        
+        @media screen and (min-width: 1024px) {
             width: 535px;
         }
-        @media screen and (min-width: 634px) {
+        @media screen and (min-width: 1280px) {
             width: 634px;
         }
 
