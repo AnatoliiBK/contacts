@@ -2,15 +2,22 @@
     display: block;
     padding-top: 36px;
     padding-bottom: 32px;
+    background-color: #FFFDEE;
 
     &__container {
-        @media screen and (min-width: 768px) {
+        
+        @media screen and (min-width: 1024px) {
             display: flex;
             justify-content: space-between;
             align-items: center;
             
         }
     }
+
+   /* &__data {
+        padding-right: 15px;
+        padding-left: 15px;
+    }*/
 
     &__title {
         
@@ -45,7 +52,7 @@
         align-items: center;
         margin-bottom: 16px;
         &:first-child {
-            column-gap: 23px;
+            column-gap: 32px;
         }
         &:nth-child(2) {
             justify-content: space-between;
@@ -101,7 +108,7 @@
         align-items: center;
         width: 260px;
         height: 40px;
-        background: #FFFFFF;
+        background-color: #FFFFFF;
         border: 0.5px solid #F3C653;
         border-radius: 2px;
         padding-left: 8px;
@@ -123,10 +130,10 @@
         text-decoration: none;
     }
 
-    &__icon-c {
+  /*  &__icon-c {
         
         
-    }
+    } */
 
     &__address {
         width: 260px;
@@ -136,7 +143,7 @@
         display: flex;
         align-items: center;
         column-gap: 10px;
-        background: #FFFFFF;
+        background-color: #FFFFFF;
         border: 0.5px solid #F3C653;
         border-radius: 2px;
     }
@@ -149,29 +156,39 @@
         letter-spacing: 0.01em;
         color: #494848;
     }
+    
 
     &__img {
-        width: 100%;
         display: flex;
         justify-content: center;
-        margin-right: auto;
-        margin-left: auto;
+        
     }
 
     &__image {
         width: 384px;
-        @media screen and (min-width: 414px) {
-            width: 384px;
-        }
         
-        @media screen and (min-width: 1024px) {
-            width: 535px;
-        }
-        @media screen and (min-width: 1280px) {
-            width: 634px;
-        }
-
 
     }
-}
 
+/* &__background {
+        min-width: 414px;
+        display: flex;
+        justify-content: center;
+        
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url(../../../img/location.jpg);
+        border: 1px solid #BABABA;
+
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        background-color: var(--brand-color-backgraund);   
+        padding-top: 118px;
+        padding-bottom: 118px;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+            background-image: url(../../../img/location@2x.jpg);
+    }*/
+
+}

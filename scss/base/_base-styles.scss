@@ -20,28 +20,19 @@
     margin-left: auto;
     padding-right: 15px;
     padding-left: 15px;
+    width: 414px;
 
-    @media screen and (min-width: 384px) {
-      width: 100%;
-    }
-
-    @media screen and (min-width: 414px) {
-      width: 100%;
-    }
-
-    @media screen and (min-width: 480px) {
-      width: 100%;
-    }
-
-    @media screen and (min-width: 768px) {
-      width: 100%;
-    }
-
+ /*   @media screen and (min-width: 768px) {
+      padding-right: 30px;
+      padding-left: 30px;
+    }  */
     @media screen and (min-width: 1024px) {
-      width: 100%;
+      padding-right: 47px;
+      padding-left: 47px;
     }
 
     @media screen and (min-width: 1280px) {
-      width: 1280px;
+      padding-right: 85px;
+      padding-left: 85px;
     }
 }
