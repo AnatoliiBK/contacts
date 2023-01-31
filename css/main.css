@@ -27,21 +27,16 @@ body {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
   width: 414px;
 }
 @media screen and (min-width: 1024px) {
   .container {
     width: 1024px;
-    padding-right: 47px;
-    padding-left: 47px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
-    padding-right: 85px;
-    padding-left: 85px;
+    width: 1280px;
   }
 }
 
@@ -670,10 +665,6 @@ body {
   padding-top: 36px;
   padding-bottom: 32px;
   background-color: #FFFDEE;
-  /* &__data {
-       padding-right: 15px;
-       padding-left: 15px;
-   }*/
 }
 @media screen and (min-width: 1024px) {
   .contact {
@@ -681,10 +672,14 @@ body {
     padding-bottom: 40px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .contact {
     padding-bottom: 73px;
   }
+}
+.contact__container {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 @media screen and (min-width: 1024px) {
   .contact__container {
@@ -697,6 +692,14 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-right: 47px;
+    padding-left: 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact__container {
+    padding-right: 85px;
+    padding-left: 85px;
   }
 }
 .contact__title {
@@ -713,6 +716,11 @@ body {
     margin-bottom: 8px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .contact__title {
+    margin-bottom: 16px;
+  }
+}
 .contact__text {
   margin-top: 0;
   margin-bottom: 16px;
@@ -727,10 +735,20 @@ body {
     margin-bottom: 52px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .contact__text {
+    margin-bottom: 40px;
+  }
+}
 .contact__list {
   list-style: none;
   padding-left: 0;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .contact__list {
+    margin-bottom: 0;
+  }
 }
 .contact__item {
   display: -webkit-box;
@@ -901,6 +919,7 @@ body {
   line-height: 20px;
   letter-spacing: 0.01em;
   color: #494848;
+  text-decoration: none;
 }
 .contact__address-dep {
   display: -webkit-box;
@@ -960,49 +979,19 @@ body {
     background-image: url(../../../img/location-tab@2x.jpg);
   }
 }
+@media screen and (min-width: 1280px) {
+  .contact__img {
+    width: 634px;
+    height: 412px;
+    background-image: url(../../../img/location-desk.jpg);
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 2dppx), screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+  .contact__img {
+    background-image: url(../../../img/location-desk@2x.jpg);
+  }
+}
 
-/* &__image {
-     width: 384px;
-     background-size: cover;
-     background-position: center center;
-     background-repeat: no-repeat;
-     background-image: url(../../../img/location-tab.jpg);
-
-     @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-             background-image: url(../../../img/location-tab@2x.jpg);
-     }
-
-     @media screen and (min-width: 1024) {
-         width: 535px;
-         background-size: cover;
-         background-position: center center;
-         background-repeat: no-repeat;
-         background-image: url(../../../img/location-tab.jpg);
-
-         @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-             background-image: url(../../../img/location-tab@2x.jpg);
-         }
-     }*/
-/* &__background {
-        min-width: 414px;
-        display: flex;
-        justify-content: center;
-
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-image: url(../../../img/location.jpg);
-        border: 1px solid #BABABA;
-
-        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-        border-radius: 2px;
-        background-color: var(--brand-color-backgraund);   
-        padding-top: 118px;
-        padding-bottom: 118px;
-
-        @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-            background-image: url(../../../img/location@2x.jpg);
-    }*/
 /* З СЕКЦІЇ ОСОБЛИВОСТЕЙ або FEATURES  */
 .hidden-title {
   margin-right: auto;
