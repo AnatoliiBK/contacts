@@ -13,33 +13,33 @@ body {
           box-sizing: border-box;
 }
 
-.section {
-  padding-top: 36px;
-  padding-bottom: 32px;
-}
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+/*.section {
+  /*  padding-top: 36px;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
 }
 
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  width: 414px;
-}
-@media screen and (min-width: 1024px) {
-  .container {
-    width: 1024px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-  }
-}
+.container {    
 
+
+
+
+
+
+    @media screen and (min-width: 1024px) {
+
+
+    }
+
+    @media screen and (min-width: 1280px) {
+
+    }
+}
+*/
 /*  змінні для кольорів  */
 :root {
   --brand-color-text: #212121;
@@ -661,9 +661,12 @@ body {
 }
 
 .contact {
-  display: block;
+  min-width: 414px;
   padding-top: 36px;
   padding-bottom: 32px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: #FFFDEE;
 }
 @media screen and (min-width: 1024px) {
@@ -678,11 +681,15 @@ body {
   }
 }
 .contact__container {
+  width: 414px;
   padding-right: 15px;
   padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 1024px) {
   .contact__container {
+    width: 1024px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -698,6 +705,7 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .contact__container {
+    width: 1280px;
     padding-right: 85px;
     padding-left: 85px;
   }
@@ -857,11 +865,6 @@ body {
   padding-left: 8px;
   padding-right: 8px;
 }
-@media screen and (min-width: 1024px) {
-  .contact__box {
-    width: 264px;
-  }
-}
 .contact__box-s {
   width: 144px;
   -webkit-column-gap: 8px;
@@ -877,7 +880,7 @@ body {
   text-decoration: none;
 }
 .contact__icon-c {
-  fill: brown;
+  fill: #C79002;
 }
 .contact__address {
   width: 260px;
