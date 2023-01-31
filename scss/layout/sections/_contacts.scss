@@ -130,10 +130,10 @@
         text-decoration: none;
     }
 
-  /*  &__icon-c {
+    &__icon-c {
+        fill: brown;
         
-        
-    } */
+    } 
 
     &__address {
         width: 260px;
@@ -146,6 +146,7 @@
         background-color: #FFFFFF;
         border: 0.5px solid #F3C653;
         border-radius: 2px;
+        padding-left: 10px;
     }
 
     &__address-text {

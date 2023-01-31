@@ -677,10 +677,6 @@ body {
        padding-right: 15px;
        padding-left: 15px;
    }*/
-  /*  &__icon-c {
-
-
-    } */
   /* &__background {
           min-width: 414px;
           display: flex;
@@ -826,6 +822,9 @@ body {
   color: #494848;
   text-decoration: none;
 }
+.contact__icon-c {
+  fill: brown;
+}
 .contact__address {
   width: 260px;
   height: 76px;
@@ -843,6 +842,7 @@ body {
   background-color: #FFFFFF;
   border: 0.5px solid #F3C653;
   border-radius: 2px;
+  padding-left: 10px;
 }
 .contact__address-text {
   font-style: normal;
