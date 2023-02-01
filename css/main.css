@@ -1,7 +1,8 @@
 @charset "UTF-8";
 body {
-  font-family: "Roboto", sans-serif;
-  color: var(--brand-color-text);
+  font-family: "Montserrat", sans-serif;
+  /*   font-family: 'Roboto', sans-serif;
+     color: var(--brand-color-text);  
   /*   font-family: 'Montserat', sans-serif;
      color: var(--brand-color-text);  */
 }
@@ -768,9 +769,9 @@ body {
   margin-bottom: 16px;
 }
 .contact__item:first-child {
-  -webkit-column-gap: 32px;
-     -moz-column-gap: 32px;
-          column-gap: 32px;
+  -webkit-column-gap: 22px;
+     -moz-column-gap: 22px;
+          column-gap: 22px;
 }
 @media screen and (min-width: 1024px) {
   .contact__item:first-child {
@@ -851,9 +852,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 8px;
-     -moz-column-gap: 8px;
-          column-gap: 8px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -867,9 +867,6 @@ body {
 }
 .contact__box-s {
   width: 144px;
-  -webkit-column-gap: 8px;
-     -moz-column-gap: 8px;
-          column-gap: 8px;
 }
 .contact__phone {
   font-weight: 400;
