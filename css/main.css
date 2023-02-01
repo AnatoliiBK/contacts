@@ -865,6 +865,11 @@ body {
   padding-left: 8px;
   padding-right: 8px;
 }
+@media screen and (min-width: 1024px) {
+  .contact__box {
+    width: 264px;
+  }
+}
 .contact__box-s {
   width: 144px;
 }
